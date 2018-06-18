@@ -196,7 +196,8 @@ class ReactPinchZoomPan extends Component {
   render () {
     const {scale, x, y} = this.state.obj
     return (
-      <div ref={root => { this.root = root }}>
+      <div ref={root => { this.root = root }}
+      className="ReactPinchZoomPan">
         {this.props.render({
           x: x.toFixed(2),
           y: y.toFixed(2),
